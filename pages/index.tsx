@@ -175,8 +175,6 @@ function GamesGraphic(props: { data: any }) {
       //@ts-ignore
       .text((d) => d.name)
 
-    console.log(props.data)
-
     return (function () {
       svg.remove()
       legend.remove()
@@ -190,7 +188,7 @@ function GamesGraphic(props: { data: any }) {
   return (
     <>
       <div ref={graphicRef} style={{ height: '100%', width: '100%' }} />
-      <div ref={legendRef} style={{ display: 'flex', flexWrap: 'wrap', marginTop: '10px' }} />
+      <div ref={legendRef} style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', marginTop: '10px' }} />
     </>
   )
 }
